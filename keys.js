@@ -7,9 +7,9 @@ const uuidv4 = require('uuid/v4');
 try {
     exports.url1 = 'https://' + fs.readFileSync('./gb-host.txt').split(':')[0].trim()
     exports.port1 = fs.readFileSync('./gb-host.txt').split(':')[1].trim()
-    exports.url2 = 'https://' + fs.readFileSync('./gb-host.txt').split(':')[0].trim()
-    exports.port2 = fs.readFileSync('./gb-host.txt').split(':')[1].trim()
-} catch(e) {
+    exports.url2 = 'https://' + fs.readFileSync('./jp-host.txt').split(':')[0].trim()
+    exports.port2 = fs.readFileSync('./jp-host.txt').split(':')[1].trim()
+} catch (e) {
     console.log('=======================\n\n CODED BY K1MPL0S <3    \n\n=======================')
 }
 
@@ -81,7 +81,7 @@ function createBasic(identifier) {
 }
 
 function createMac(ver, token, secret, method, endpoint) {
-    if(ver == 'gb'){
+    if (ver == 'gb') {
         host = keys.url1
         port = keys.port1
     } else {
@@ -98,12 +98,12 @@ function createMac(ver, token, secret, method, endpoint) {
     return auth;
 }
 
-function encryptSign(){
+function encryptSign() {
 
 }
 
-function decryptSign(){
-    
+function decryptSign() {
+
 }
 
 module.exports.createUnique = createUnique;
