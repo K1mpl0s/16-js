@@ -1,9 +1,9 @@
 const fs = require('fs');
 const keys = require('./keys.js'); //this is basically like a config.
-const outgame = require('./outgame.js');
+const outgame = require('./api/outgame.js');
 
 function checkServers(ver) {
-    outgame.ping.end(res => {
+    outgame.ping(ver).end(res => {
         if (res.status == 200) {
             let json = res.body;
             let url = json['ping_info']['host'];

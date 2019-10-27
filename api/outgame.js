@@ -6,10 +6,10 @@ function ping(ver) {
     let dua = keys.deviceAgent1;
     let code;
     if (ver == 'gb') {
-        req = unirest.get(keys.url1 + '/ping');
+        req = unirest.get('https://ishin-global.aktsk.com/ping');
         code = keys.code1;
     } else {
-        req = unirest.get(keys.url2 + '/ping');
+        req = unirest.get('https://ishin-production.aktsk.jp/ping');
         code = keys.code2;
     }
     var head = {
@@ -81,9 +81,6 @@ function getDatabase(ver, token, secret, ts) {
     return req;
 }
 
-module.exports.sendLog = sendLog;
 module.exports.ping = ping;
-module.exports.checkAsset = checkAsset;
-module.exports.checkDatabase = checkDatabase;
 module.exports.getAsset = getAsset;
-module.exports.getDb = getDb;
+module.exports.getDatabase = getDatabase;
