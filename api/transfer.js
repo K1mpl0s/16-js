@@ -17,7 +17,7 @@ function validate(ver, tc, fc) {
         "X-Platform": "android",
         "X-ClientVersion": code,
         "Content-Type": "application/json",
-        "User-Agent": keys.d1a
+        "User-Agent": keys.deviceAgent1
     };
     req.headers(head);
     req.send('{"eternal": true,"user_account": {"platform": "android","user_id": ' + fc + '}}');
@@ -32,15 +32,15 @@ function use(ver, os, tc, fc) {
     let code;
     let req;
     if (os == 'android') {
-        dn = keys.d1n;
-        dm = keys.d1m;
-        dv = keys.d1v;
-        dua = keys.d1a;
+        dn = keys.deviceName1;
+        dm = keys.deviceModel1;
+        dv = keys.deviceVer1;
+        dua = keys.deviceAgent1;
     } else {
-        dn = keys.d2n;
-        dm = keys.d2m;
-        dv = keys.d2v;
-        dua = keys.d2a;
+        dn = keys.deviceName2;
+        dm = keys.deviceModel2;
+        dv = keys.deviceVer2;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.put(keys.url1 + '/auth/link_codes/' + tc);
@@ -70,9 +70,9 @@ function create(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/auth/link_codes');

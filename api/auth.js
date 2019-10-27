@@ -10,15 +10,15 @@ function register(ver, os, acc, ad, unique, key) {
     let code;
     let req;
     if (os == 'android') {
-        dn = keys.d1n;
-        dm = keys.d1m;
-        dv = keys.d1v;
-        dua = keys.d1a;
+        dn = keys.deviceName1;
+        dm = keys.deviceModel1;
+        dv = keys.deviceVer1;
+        dua = keys.deviceAgent1;
     } else {
-        dn = keys.d2n;
-        dm = keys.d2m;
-        dv = keys.d2v;
-        dua = keys.d2a;
+        dn = keys.deviceName2;
+        dm = keys.deviceModel2;
+        dv = keys.deviceVer2;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/auth/sign_up');
@@ -73,9 +73,9 @@ function login(ver, os, basic, first, key) {
     let code;
     let req;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/auth/sign_in');

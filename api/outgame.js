@@ -3,7 +3,7 @@ const keys = require('../keys.js');
 
 function ping(ver) {
     let req;
-    let dua = keys.d1a;
+    let dua = keys.deviceAgent1;
     let code;
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/ping');
@@ -24,7 +24,7 @@ function ping(ver) {
 }
 
 function getAsset(ver, token, secret, ts) {
-    let dua = keys.d1a;
+    let dua = keys.deviceAgent1;
     let code;
     let req;
     let auth;
@@ -53,7 +53,7 @@ function getAsset(ver, token, secret, ts) {
 }
 
 function getDatabase(ver, token, secret, ts) {
-    let dua = keys.d1a;
+    let dua = keys.deviceAgent1;
     let code;
     let req;
     let auth;

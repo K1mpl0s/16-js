@@ -10,9 +10,9 @@ function user(ver, os, token, secret, first) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/user');
@@ -59,9 +59,9 @@ function cards(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/cards');
@@ -100,9 +100,9 @@ function news(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/announcements?display=home');
@@ -141,9 +141,9 @@ function banners(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/gashas');
@@ -182,9 +182,9 @@ function events(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/events');
@@ -223,9 +223,9 @@ function changeName(ver, os, token, secret, name) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.put(keys.url1 + '/user');
@@ -265,9 +265,9 @@ function capacity(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/user/capacity/card');
@@ -306,9 +306,9 @@ function dashStatus(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/start_dash_gasha_status');
@@ -347,9 +347,9 @@ function summon(ver, os, token, secret, id, course) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/gashas/' + id + '/courses/' + course + '/draw');
@@ -388,9 +388,9 @@ function gifts(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/gifts');
@@ -429,9 +429,9 @@ function acceptGifts(ver, os, token, secret, gift) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/gifts/accept');
@@ -471,9 +471,9 @@ function missions(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/missions');
@@ -512,9 +512,9 @@ function acceptMissions(ver, os, token, secret, mission) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/missions/accept');
@@ -554,9 +554,9 @@ function actRefill(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.put(keys.url1 + '/user/recover_act_with_stone');
@@ -595,9 +595,9 @@ function sell(ver, os, token, secret, cards) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.post(keys.url1 + '/cards/sell');
@@ -637,9 +637,9 @@ function setWallpaper(ver, os, token, secret, wallpaper) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.put(keys.url1 + '/user');
@@ -679,9 +679,9 @@ function quests(ver, os, token, secret) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/user_areas');
@@ -720,9 +720,9 @@ function getSupports(ver, os, token, secret, stage) {
     let req;
     let auth;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         req = unirest.get(keys.url1 + '/quests/' + stage + '/supporters');

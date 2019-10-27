@@ -11,9 +11,9 @@ function tutorial(ver, os, token, secret, channel) {
     let code;
     let req;
     if (os == 'android') {
-        dua = keys.d1a;
+        dua = keys.deviceAgent1;
     } else {
-        dua = keys.d2a;
+        dua = keys.deviceAgent2;
     }
     if (ver == 'gb') {
         code = keys.code1;
