@@ -24,7 +24,7 @@ exports.iden1 = 'SnVZUVo2QlNCNVkvMnZTZGViOWt3aFowY0Zqc216KzdVNlNQT3RzeHltelR2aTl
 exports.iden2 = 'VEtmbk9HSGJOcnhMdys1dER1dnVxcGpib3RrTlRSbThDWlk2eU1lU2lrL09Wd25lWFdVUGs4dHRESWljNnd4TWdyazlvaHJvY2Q0OFBLMjlDWXF5L3c9PTpwU2RUWDgwc1RUdjNLc0dQWWVQbitnPT0=';
 
 //version code
-exports.code1 = '4.5.2-b4ac51396aac63092c3c70627dcd73a9b36a68062f5561bfb4d2e10e1291c20f';
+exports.code1 = '4.5.3-9921c381912ab752562811fcba986a3649d120797d68f3f883c76ae5326f189e';
 exports.code2 = '4.6.0-ab038dfeb2ac7b2b9831b3c381120deefeedc9c98803011c44214d06fc94b7de';
 
 //android
